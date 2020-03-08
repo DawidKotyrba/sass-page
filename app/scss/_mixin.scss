@@ -1,0 +1,19 @@
+@mixin flexblock {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexblockColumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin margin($marg) {
+    margin: $marg;
+}
+
+@mixin withHight($wit, $hig) {
+    width: $wit;
+    height: $hig;
+}

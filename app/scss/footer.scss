@@ -1,0 +1,36 @@
+@import 'mixin';
+@import 'colors';
+
+.footer-inner {
+    background-color: $color-gray;
+    color: $color-white;
+    text-align: center;
+    padding: 20px 0;
+
+    .container-box {
+        width: 60%;
+        @include margin(0 auto);
+
+        .container {
+            @include flexblock;
+            flex-wrap: wrap;
+
+            .flex-items {
+                @include flexblockColumn;
+                align-items: center;
+                height: 150px;
+                flex-basis: 50%;
+
+                .yellow-box {
+                    color: black;
+                    padding: 20px;
+                    background-color: $color-yellow;
+                }
+            }
+        }
+    }
+
+    p {
+        @include margin(10px auto);
+    }
+}

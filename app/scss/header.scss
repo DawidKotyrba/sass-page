@@ -1,0 +1,98 @@
+@import 'mixin';
+@import 'colors';
+
+.main-header {
+    background-image: url('../../img/background.png');
+    height: 100vh;
+    background-size: cover;
+
+    .container {
+        @include flexblock;
+        padding-top: 10px;
+        @include withHight(60%, 70px);
+        @include margin(0px auto);
+
+        .top-box {
+            flex-basis: 50%;
+            height: 100%;
+            color: $color-white;
+        }
+
+        .left {
+            h1 {
+                line-height: 70px;
+            }
+
+            .fa-university {
+                color: $color-yellow;
+                @include margin(10px);
+            }
+        }
+
+        .right {
+            @include flexblock;
+            text-align: left;
+            flex-direction: row-reverse;
+
+            .fa-phone {
+                transform: rotate(90deg);
+                order: 1;
+                @include margin(5px);
+            }
+        }
+    }
+
+    .container-down {
+        @include withHight(60%, 90%);
+        @include margin(0 auto);
+
+        .down-right {
+            height: 100%;
+            @include flexblockColumn;
+            align-items: flex-end;
+
+
+            h2 {
+                color: $color-white;
+                order: 0;
+                width: 37%;
+                @include margin(10px 0);
+
+                .yellow-text {
+                    color: $color-yellow;
+                }
+            }
+
+            .form-container {
+                h3 {
+                    color: $color-white;
+                    @include margin(10px 0);
+                }
+
+                background-color: $color-blue;
+                width: 33%;
+                padding: 20px;
+
+                form {
+
+                    .inputs-items {
+                        @include withHight(100%, 35px);
+                        @include margin(5px 0);
+                    }
+
+                    textarea {
+                        @include withHight(100%, 50px);
+                        @include margin(5px 0);
+                    }
+
+                    input[type="submit"] {
+                        @include withHight(100px, 50px);
+                        font-size: larger;
+                        background-color: $color-yellow;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
