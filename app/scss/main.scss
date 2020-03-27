@@ -1,7 +1,9 @@
 @import 'header';
 @import 'footer';
+@import 'responsible';
 
 * {
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }

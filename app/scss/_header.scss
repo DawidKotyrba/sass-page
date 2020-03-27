@@ -51,11 +51,10 @@
             @include flexblockColumn;
             align-items: flex-end;
 
-
             h2 {
                 color: $color-white;
                 order: 0;
-                width: 37%;
+                width: 40%;
                 @include margin(10px 0);
 
                 .yellow-text {
@@ -70,7 +69,7 @@
                 }
 
                 background-color: $color-blue;
-                width: 33%;
+                width: 40%;
                 padding: 20px;
 
                 form {
